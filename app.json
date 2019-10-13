@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/binding/binding",
     "pages/me/me",
-    "pages/home/home",
     "pages/tomato/tomato",
+    "pages/binding/binding",
+    "pages/home/home",
     "pages/test/test"
   ],
   "window": {
@@ -26,18 +26,11 @@
         "selectedIconPath": "images/home-active.png"
       },
       {
-        "pagePath": "pages/home/home",
-        "text": "数据统计",
-        "iconPath": "images/total.png",
-        "selectedIconPath": "images/total-active.png"
-      },
-      {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "images/me.png",
         "selectedIconPath": "images/me-active.png"
-      }
+      } 
     ]
-  },
-  "sitemapLocation": "sitemap55.json"
+  }
 }

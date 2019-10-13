@@ -12,12 +12,10 @@ Page({
     this.setData({ isBinding: true })
   },
   watchAccount(event) {
-    console.log(event.detail.value)
     let account = event.detail.value
 
   },
   watchPassword(event) {
-    console.log(event)
     let password = event.detail.value
   }
 })

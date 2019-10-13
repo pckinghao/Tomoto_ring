@@ -3,7 +3,7 @@
     <view class="{{selectTab === index ? 'item active'  : 'item'}}"
       wx:for="{{lists}}"  
       wx:for-index="index" 
-      wx:key="{{item.id}}" 
+      wx:key="{{item.id}}"  
       data-index="{{index}}"
       data-id="{{item.id}}"
       wx:if="{{!item.completed}}"
@@ -15,13 +15,13 @@
       data-id="{{item.id}}" >{{item.description}}</text>
     </view>
   </scroll-view>
-  <t-button type="change"   class="createButton" text="创建任务" bindtap='showConfirm'>创建任务</t-button>
+  <g-button type="change"   class="createButton" text="创建任务" bindtap='showConfirm'>创建任务</g-button>
   <view class="tomato-wrapper">
     <navigator class="tomato" url="/pages/tomato/tomato">
-     <t-clock text="点击开始闹钟"></t-clock>
+     <g-clock text="点击开始闹钟"></g-clock>
     </navigator>
   </view>
- <t-confirm  bindconfirm="confirmCreate"  bindcancel="hideConfirm" 
-  visible="{{visibleConfirm}}"></t-confirm>
-  <t-confirm value="{{newTodos}}"  bindconfirm="confirmUpdate" bindcancel="hideUpdate"  visible="{{visibleUpdate}}"></t-confirm>
+ <g-confirm  bindconfirm="confirmCreate"  bindcancel="hideConfirm" 
+  visible="{{visibleConfirm}}"></g-confirm>
+  <g-confirm value="{{newTodos}}"  bindconfirm="confirmUpdate" bindcancel="hideUpdate"  visible="{{visibleUpdate}}"></g-confirm>
 </view>
